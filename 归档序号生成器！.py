@@ -40,12 +40,12 @@ if issuesType<=3 or issuesType>=1 and issueOurin>=1 or issueOurin<=2:
        # 防止手贱输入超过1000以上的数值导致cpu着火
        if RangeTimes<=1000:
         for i in range(SerialNum, SerialNum + RangeTimes + 1):
-           print("|" + str(i) + "" + "|" + "" + "(" + str(IssuesType) + ")" + str(Archiveformat) + "                                       " + "[" + str(IssueOurin) + "部Issue#" +str(IssuesNum)+ "] " + "||0.99.90" + str(VerisonNun) + "|")
+           print("|" + str(i) + "" + "|" + "" + "(" + str(IssuesType) + ")" + str(Archiveformat) + "                                       " + "[" + str(IssueOurin) + "部Issue#" +str(IssuesNum)+ "] " + "||0.99." + str(VerisonNun) + "|")
            data = open("归档预备.md", 'w+')
            # 打印结果
            for i in range(SerialNum, SerialNum + RangeTimes + 1):
                # 我没想到i要怎么用英语表述，是用来输出的中间量
-              print("|" + str(i) + "" + "|" + "" + "(" + str(IssuesType) + ")" + str(Archiveformat) + "                                       " + "[" + str(IssueOurin) + "部Issue#" +str(IssuesNum)+ "] " + "||0.99.90" + str(VerisonNun) + "|", file=data)
+              print("|" + str(i) + "" + "|" + "" + "(" + str(IssuesType) + ")" + str(Archiveformat) + "                                       " + "[" + str(IssueOurin) + "部Issue#" +str(IssuesNum)+ "] " + "||0.99." + str(VerisonNun) + "|", file=data)
            data.close()
         print("输出完成，请检查此py文件根目录下的'归档预备.md'文件")
         # 打印结果到此py文件下目录的“归档预备.md”
