@@ -1,4 +1,4 @@
-
+# coding=UTF-8
 for Times in range(1000000000):
   issuesType = int(input("Bug修复：1\n设定引入：2\n数据调整：3\n请选择issue类型："))
   if issuesType == 1:
