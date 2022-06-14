@@ -41,7 +41,7 @@ if issuesType<=3 or issuesType>=1 and issueOurin>=1 or issueOurin<=2:
        if RangeTimes<=1000:
         for i in range(SerialNum, SerialNum + RangeTimes + 1):
            print("|" + str(i) + "" + "|" + "" + "(" + str(IssuesType) + ")" + str(Archiveformat) + "                                       " + "[" + str(IssueOurin) + "部Issue#" +str(IssuesNum)+ "] " + "||0.99." + str(VerisonNun) + "|")
-           data = open("归档预备.md", 'w+')
+           data = open("归档预备.md", 'w+' , encoding='utf-8')
            # 打印结果
            for i in range(SerialNum, SerialNum + RangeTimes + 1):
                # 我没想到i要怎么用英语表述，是用来输出的中间量
